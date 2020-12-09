@@ -12,7 +12,16 @@ Apply auto machine learning to data streams and create transactional machine lea
  This book will strengthen your knowledge of the inner workings of TML solutions using data streams with auto machine learning integrated with Apache Kafka.  You will be at the forefront of an exciting area of machine learning that is focused on speed of data and algorithm creation, scale, and automation.
 
 Create Your First TML Solution by Downloading:
-1) MAADS-VIPER: https://www.confluent.io/hub/oticsinc/maads-viper (Official Kafka connector for TML)
-2) MAADS-HPDE: https://github.com/smaurice101/MAADS-HPDE
+1) MAADS-VIPER: https://www.confluent.io/hub/oticsinc/maads-viper (Official Kafka connector for TML - Linux version)
+2) MAADS-HPDE: https://github.com/smaurice101/MAADS-HPDE (Windows/Linux versions available)
 3) MAADS-Python Library: https://pypi.org/project/maads/
 4) Create a Confluent Cloud Account: https://www.confluent.io/confluent-cloud
+
+**Contact**: 
+
+For any help and additional information you can email: info@otics.ca
+
+**Read Medium blog**: https://sebastian-maurice.medium.com/transactional-machine-learning-with-data-streams-for-real-time-predictions-and-optimization-using-eb12c4df597c
+
+**Read Confluent blog**: 
+
