@@ -13,6 +13,6 @@ Apply auto machine learning to data streams and create transactional machine lea
 
 Create Your First TML Solution by Downloading:
 1) MAADS-VIPER: https://www.confluent.io/hub/oticsinc/maads-viper (Official Kafka connector for TML)
-2) MAADS-HPDE: 
+2) MAADS-HPDE: https://github.com/smaurice101/MAADS-HPDE
 3) MAADS-Python Library: https://pypi.org/project/maads/
 4) Create a Confluent Cloud Account: https://www.confluent.io/confluent-cloud
