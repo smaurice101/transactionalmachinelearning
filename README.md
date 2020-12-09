@@ -19,7 +19,7 @@ Create Your First TML Solution by Downloading:
 
 **Contact**: 
 
-For any help and additional information you can email: info@otics.ca
+For any help and additional information, or if your token has expired you can e-mail: info@otics.ca and we would be happy to help you!
 
 **Read Medium blog**: https://sebastian-maurice.medium.com/transactional-machine-learning-with-data-streams-for-real-time-predictions-and-optimization-using-eb12c4df597c
 
