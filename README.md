@@ -13,6 +13,8 @@ TML is ideal when data are highly erratic (nonlinear) and you want the machine t
 
 Strengthen your knowledge of the inner workings of TML solutions using data streams with auto machine learning integrated with Apache Kafka.  **You will be at the forefront of an exciting area of machine learning that is focused on speed of data and algorithm creation, scale, and automation.**
 
+---
+
 **Create Your First TML Solution with Kafka by Downloading:**
 
 1) MAADS-VIPER: https://www.confluent.io/hub/oticsinc/maads-viper (Official Kafka connector for TML - Linux version).  **Latest** Linux/Windows version can be found here: https://github.com/smaurice101/maads-viper)
@@ -27,9 +29,13 @@ Strengthen your knowledge of the inner workings of TML solutions using data stre
 
 For any help and additional information, or if your token has expired you can e-mail: info@otics.ca or goto http://www.otics.ca, and we would be happy to help you! OTICS will provide 1 hour free developer session on TML if needed.
 
+***
+
 [**Read Confluent blog**]()
 
 [**Read Medium blog**](https://sebastian-maurice.medium.com/transactional-machine-learning-with-data-streams-for-real-time-predictions-and-optimization-using-eb12c4df597c)
+
+***
 
 **EXAMPLE TML PYTHON CODE**: You can literally build extremely powerful, distributed, and scalable cloud-based machine learning solutions with the code below for your business use case of any size with low-code and low-cost!
 
