@@ -152,7 +152,7 @@ producerid=y['ProducerId']
 # subscribe to any topic and grab the consumerid - a consumerid is needed to consume from the topic
 
 result3=maads.vipersubscribeconsumer(VIPERTOKEN,VIPERHOST,VIPERPORT,topic,"OTICS","Sebastian","Sebastian.Maurice"
-                                   #  "Toronto","Test","Test",brokerhost='',brokerport=-999,groupid='',microserviceid='')
+                                     "Toronto","Test","Test",brokerhost='',brokerport=-999,groupid='',microserviceid='')
 print(result3)
 y = json.loads(result3)
 consumerid=y['Consumerid']
