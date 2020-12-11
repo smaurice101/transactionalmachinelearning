@@ -18,6 +18,8 @@ Apply auto machine learning to data streams and create transactional machine lea
 3) MAADS-Python Library: https://pypi.org/project/maads/
 4) Create a Kafka Cluster at Confluent Cloud: https://www.confluent.io/confluent-cloud
 
+**For Advanced users who want to integrate TML with MAADS DEEP LEARNING technology should email info@otics.ca**
+
 **Contact**: 
 
 For any help and additional information, or if your token has expired you can e-mail: info@otics.ca or goto http://www.otics.ca, and we would be happy to help you! OTICS will provide 1 hour free developer session on TML if needed.
