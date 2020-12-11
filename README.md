@@ -1,4 +1,4 @@
-# transactionalmachinelearning
+# transactional machine learning
 Transactional Machine Learning (TML) using Data Streams and AutoML
 
 **Fast data requires fast machine learning**  
