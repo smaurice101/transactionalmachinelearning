@@ -76,8 +76,8 @@ result3=maads.vipercreatetopic(VIPERTOKEN,VIPERHOST,VIPERPORT,producetotopic,"OT
                             #   brokerhost='',brokerport=-999,numpartitions=3,replication=3,microserviceid='')
 y = json.loads(result3)
 producetotopic=y['Topic']
-producerid=y['ProducerId']
-print(producerid)
+producerid1=y['ProducerId']
+print(producerid1)
 
 
 # First Create a topic to produce to
@@ -87,8 +87,8 @@ result3=maads.vipercreatetopic(VIPERTOKEN,VIPERHOST,VIPERPORT,producetotopic,"OT
                               # brokerhost='',brokerport=-999,numpartitions=3,replication=3,microserviceid='')
 y = json.loads(result3)
 producetotopic=y['Topic']
-producerid=y['ProducerId']
-print(producerid)
+producerid2=y['ProducerId']
+print(producerid2)
 
 
 # First Create a topic to produce to
@@ -98,16 +98,15 @@ result3=maads.vipercreatetopic(VIPERTOKEN,VIPERHOST,VIPERPORT,producetotopic,"OT
                              #  brokerhost='',brokerport=-999,numpartitions=3,replication=3,microserviceid='')
 y = json.loads(result3)
 producetotopic=y['Topic']
-producerid=y['ProducerId']
-print(producerid)
+producerid3=y['ProducerId']
+print(producerid3)
 
 #############################################################################################################
 #                                     PRODUCE External Value to TOPIC STREAMS
 # produce to Topic
 
 topics=["viperdependentvariable","viperindependentvariable1","viperindependentvariable2"]
-producerids=["ProducerId-vTXnd4FJqfmBahbLPMjjFxIrvUqR11","ProducerId-iq2YUiU6IbIzAOsAlTI95njaaHyWgk",
-             "ProducerId-GEjx2o7jkfA4aezkEnGCowGlt2yTv0"]
+producerids=[producerid1, producerid2, producerid3]
 
 for j in range(500):  
     for t,p in zip(topics,producerids):
