@@ -29,9 +29,11 @@ For any help and additional information, or if your token has expired you can e-
 **EXAMPLE TML PYTHON CODE**
 ```python
 import maads
+#If using Jupyer Notebook then use this library
 import nest_asyncio
 import json
 
+#If using Jupyer Notebook then use this command
 nest_asyncio.apply()
 
 #jupyter notebook --NotebookApp.iopub_data_rate_limit=1.0e10
