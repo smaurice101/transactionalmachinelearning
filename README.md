@@ -33,6 +33,8 @@ For any help and additional information, or if your token has expired you can e-
 
 **EXAMPLE TML PYTHON CODE**: You can literally build extremely powerful, distributed, and scalable cloud-based machine learning solutions with the code below for your business use case of any size with low-code and low-cost!
 
+**Following example uses Google Cloud Platform (GCP) via Confluent Cloud: pkc-4yyd6.us-east1.gcp.confluent.cloud:9092**  We could have easily used Amazon AWS, and Microsoft Azure - with no code changes.
+
 ```python
 import maads
 #If using Jupyer Notebook then use this library
