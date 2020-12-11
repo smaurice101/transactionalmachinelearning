@@ -49,6 +49,7 @@ nest_asyncio.apply()
 # Stream 2: Independentvariable1
 # Stream 3: Independentvariable2
 
+#Connect to VIPER and HPDE 
 VIPERHOST="http://192.168.0.13"
 VIPERPORT=8000
 hpdehost="http://192.168.0.13"
@@ -56,7 +57,9 @@ hpdeport=8001
 viperconfigfile="viper.env"
 
 def getparams():
-        
+# admin.tok is included in the VIPER zip files - there is also a user.tok (not included) - which is used by users
+# of TML solutions, it allows TML Adminstrators to control some functions by users who are not adminstrators
+
      with open("admin.tok", "r") as f:
         VIPERTOKEN=f.read()
   
@@ -68,7 +71,7 @@ VIPERTOKEN=getparams()
 
 #############################################################################################################
 #                                     CREATE TOPICS IN KAFKA
-# First Create a topic to produce to
+# First Create a topic to produce to and grab the producer ids - you will need it to produce to the topic.
 
 producetotopic="viperdependentvariable"
 result3=maads.vipercreatetopic(VIPERTOKEN,VIPERHOST,VIPERPORT,producetotopic,"OTICS","Sebastian",
@@ -103,7 +106,7 @@ print(producerid3)
 
 #############################################################################################################
 #                                     PRODUCE External Value to TOPIC STREAMS
-# produce to Topic
+# produce to Topics in Kafka
 
 topics=["viperdependentvariable","viperindependentvariable1","viperindependentvariable2"]
 producerids=[producerid1, producerid2, producerid3]
@@ -115,7 +118,8 @@ for j in range(500):
       
 #############################################################################################################
 #                                     JOIN DATA STREAMS 
-# "viperdependentvariable,viperindependentvariable1,viperindependentvariable2"
+# streams = "viperdependentvariable,viperindependentvariable1,viperindependentvariable2"
+# you can create any type of streams and simply join them using this function - its a very powerful function
 
 joinedtopic="joined-viper-test11"
 result=maads.vipercreatejointopicstreams(VIPERTOKEN,VIPERHOST,VIPERPORT,"joined-viper-test11",
@@ -133,8 +137,9 @@ producerid=y['ProducerId']
 
 #############################################################################################################
 #                                     SUBSCRIBE TO STREAM TOPIC
+# subscribe to any topic and grab the consumerid - a consumerid is needed to consume from the topic
 
-#result3=maads.vipersubscribeconsumer(VIPERTOKEN,VIPERHOST,VIPERPORT,topic,"OTICS","Sebastian","Sebastian.Maurice@otics.ca"
+#result3=maads.vipersubscribeconsumer(VIPERTOKEN,VIPERHOST,VIPERPORT,topic,"OTICS","Sebastian","Sebastian.Maurice"
                                    #  "Toronto","Test","Test",brokerhost='',brokerport=-999,groupid='',microserviceid='')
 #print(result3)
 #y = json.loads(result3)
@@ -149,10 +154,14 @@ consumerid="ConsumerId-Gu-TPSextT6NHj6ZzPG03iTqs21Wwt"
 ```python
 #############################################################################################################
 #                                      PRODUCE DATA TO STREAM: joined-viper-test11
+# This function uses the producer id and topic from vipercreatejointopicstreams and grabs all the data streams
+# and writes the consolidated to the topic - in the function below - we ROLLBACK each stream by 50 offsets
+# and grab the data - you can increase or decrease this number.  NOTE for machine learning a minimum of 30 rows
+# of data are needed.
 
-#result2=maads.viperproducetotopicstream(VIPERTOKEN,VIPERHOST,VIPERPORT,topic,producerid,-1,50,1,10000, '',-999,'')
-#print(topic)
-#print(result2)
+result2=maads.viperproducetotopicstream(VIPERTOKEN,VIPERHOST,VIPERPORT,topic,producerid,-1,50,1,10000, '',-999,'')
+print(topic)
+print(result2)
 
 
 
@@ -162,8 +171,8 @@ consumerid="ConsumerId-Gu-TPSextT6NHj6ZzPG03iTqs21Wwt"
 ```python
 #############################################################################################################
 #                           CREATE TOPIC TO SAVE TRAINING DATA SET FROM STREAM
+# Create a topic to produce to and grab the producer id
 
-# Frist Create a topic to produce to
 producetotopic="trainingdata2"
 result3=maads.vipercreatetopic(VIPERTOKEN,VIPERHOST,VIPERPORT,producetotopic,"OTICS","Sebastian",
                                "Sebastian.maurice","Toronto", "Test Training",enabletls=1,
@@ -174,6 +183,9 @@ producerid=y['ProducerId']
 
 #############################################################################################################
 #                           CREATE TRAINING DATA SET FROM JOINED STREAM TOPIC
+# Create the training data sets with the dependent and independent variable streams
+# VIPER will automatically re-algin the rows in the streams. For example, if one stream has more data 
+# than another stream, VIPER will will re-align using the "shortest" stream as the nrows for the other streams
 
 consumefrom=topic
 #print(topic)
@@ -194,6 +206,7 @@ result4=maads.vipercreatetrainingdata(VIPERTOKEN,VIPERHOST,VIPERPORT,consumefrom
 ```python
 #############################################################################################################
 #                         SUBSCRIBE TO TRAINING DATA TOPIC  
+# subscribe and get the consumer id
 
 producetotopic="trainingdata2"
 result=maads.vipersubscribeconsumer(VIPERTOKEN,VIPERHOST,VIPERPORT,producetotopic,"OTICS","Sebastian","Sebastian.Maurice"
@@ -204,7 +217,7 @@ consumeridtrainingdata2=y['Consumerid']
 
 #############################################################################################################
 #                         CREATE TOPIC TO STORE TRAINED PARAMS FROM ALGORITHM  
-# Frist Create a topic to produce to
+# Create a topic to produce to and grab the producer id
 
 consumefrom=producetotopic
 producetotopic="trainined-params"
@@ -218,7 +231,8 @@ producerid=y['ProducerId']
 
 #############################################################################################################
 #                         VIPER CALLS HPDE TO PERFORM REAL_TIME MACHINE LEARNING ON TRAINING DATA 
-
+# CALL HPDE - HPDE will automatically connect to Kafka, grab the training dataset and produce the optimal
+# algorithm results to the "producetotopic"
 
 consumefrom="trainingdata2"
 producetotopic="trainined-params"
@@ -231,6 +245,7 @@ algokey=y['Algokey']
 
 #############################################################################################################
 #                                     SUBSCRIBE TO STREAM TOPIC
+# subscribe to topic and grab the consumer id
 
 producetotopic="trainined-params"
 result=maads.vipersubscribeconsumer(VIPERTOKEN,VIPERHOST,VIPERPORT,producetotopic,"OTICS","Sebastian","Sebastian.Maurice"
@@ -244,7 +259,7 @@ consumefrom=producetotopic
 
 #############################################################################################################
 #                         CREATE TOPIC TO STORE PREDICTIONS FROM ALGORITHM  
-# Frist Create a topic to produce to
+# Create a topic to produce to and grab the producer id
 
 producetotopic="hyper-predictions"
 result=maads.vipercreatetopic(VIPERTOKEN,VIPERHOST,VIPERPORT,producetotopic,"OTICS","Sebastian",
@@ -257,6 +272,7 @@ print(produceridhyperprediction)
 
 #############################################################################################################
 #                                     SUBSCRIBE TO STREAM PREDICTION TOPIC
+# subscribe to the topic and grab the consumer id
 
 result=maads.vipersubscribeconsumer(VIPERTOKEN,VIPERHOST,VIPERPORT,producetotopic,"OTICS","Sebastian","Sebastian.Maurice",
                                      "Toronto","Test","Test",brokerhost='',brokerport=-999,groupid='',microserviceid='')
@@ -268,6 +284,11 @@ consumefrom=producetotopic
 
 #############################################################################################################
 #                                     START HYPER-PREDICTIONS FROM ESTIMATED PARAMETERS
+# Start to predict from the optimal algorithm
+# NOTE: You can pass actual values in the "inputdata" field to do point predictions
+# OR - you can predict from another data stream - VIPER will auto format the data for input into the algorithm
+# This is powerful - meaning you can continuously predict from streaming data
+
 producetotopic="hyper-predictions"        
 
 #get data stream to predict
@@ -286,6 +307,7 @@ print(result6)
 
 #############################################################################################################
 #                                     CREATE CONSUMER GROUP
+# Create consumer group for parallel processing
 
 topictoconsumefrom="hyper-predictions"
 groupname="hyperprediction-group2"
@@ -315,6 +337,8 @@ y = json.loads(result)
 producerid=y['ProducerId']
 #############################################################################################################
 #                                     START MATHEMATICAL OPTIMIZATION FROM ALGORITHM
+# Perform mathematical optimization - HPDE will find optimal values for the independent variables.
+
 consumefrom="trainined-params"
 
 result7=maads.viperhpdeoptimize(VIPERTOKEN,VIPERHOST,VIPERPORT,consumefrom,producetotopic,"OTICS",consumeridtraininedparams,
