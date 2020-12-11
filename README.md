@@ -17,7 +17,7 @@ Apply auto machine learning to data streams and create transactional machine lea
 2) MAADS-HPDE: https://github.com/smaurice101/MAADS-HPDE (Windows/Linux versions available)
 3) MAADS-Python Library: https://pypi.org/project/maads/
 4) Create a Kafka Cluster at Confluent Cloud: https://www.confluent.io/confluent-cloud
-5) Users can also, **directly**, use Kafka services on Amazon AWS, Microsoft Azure, and Google (GCP)
+5) Users can also, **directly**, use MAADS-VIPER and Kafka services on Amazon AWS, Microsoft Azure, and Google (GCP)
 
 **For Advanced users who want to integrate TML with MAADS DEEP LEARNING technology should email info@otics.ca**
 
