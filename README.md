@@ -31,7 +31,8 @@ For any help and additional information, or if your token has expired you can e-
 
 **Read Medium blog**: https://sebastian-maurice.medium.com/transactional-machine-learning-with-data-streams-for-real-time-predictions-and-optimization-using-eb12c4df597c
 
-**EXAMPLE TML PYTHON CODE**
+**EXAMPLE TML PYTHON CODE**: You can literally build extremely powerful, distributed, and scalable cloud-based machine learning solutions with the code below for your business use case of any size with low-code and low-cost!
+
 ```python
 import maads
 #If using Jupyer Notebook then use this library
