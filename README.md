@@ -8,8 +8,10 @@ Apply auto machine learning to data streams and create transactional machine lea
  **frictionless**: require minimal to no human intervention 
  
  **elastic**: machine learning solutions that can scale up or down by controlling the number of data streams, algorithms, and users of the insights
-  
- Strengthen your knowledge of the inner workings of TML solutions using data streams with auto machine learning integrated with Apache Kafka.  You will be at the forefront of an exciting area of machine learning that is focused on speed of data and algorithm creation, scale, and automation.
+
+TML is ideal when data are highly erratic (nonlinear) and you want the machine to learn from the **latest** dataset by creating sliding windows of training datasets and auto creating **micro-machine learning models** quickly, that can be easily scaled, managed and the insights used immediately from any device!  **This is not possible with conventional machine learning methods that require frequent human interventions that create lots of friction, and not very elastic.**
+
+Strengthen your knowledge of the inner workings of TML solutions using data streams with auto machine learning integrated with Apache Kafka.  You will be at the forefront of an exciting area of machine learning that is focused on speed of data and algorithm creation, scale, and automation.
 
 **Create Your First TML Solution with Kafka by Downloading:**
 
@@ -59,7 +61,7 @@ viperconfigfile="viper.env"
 
 def getparams():
 # admin.tok is included in the VIPER zip files - there is also a user.tok (not included) - which is used by users
-# of TML solutions, it allows TML Adminstrators to control some functions by users who are not adminstrators
+# of TML solutions, it allows TML Administrators to control some functions by users who are not administrators
 
      with open("admin.tok", "r") as f:
         VIPERTOKEN=f.read()
