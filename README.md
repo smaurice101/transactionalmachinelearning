@@ -87,8 +87,8 @@ VIPERTOKEN=getparams()
 
 producetotopic="viperdependentvariable"
 result3=maads.vipercreatetopic(VIPERTOKEN,VIPERHOST,VIPERPORT,producetotopic,"OTICS","Sebastian",
-                           #    "Sebastian.maurice","Toronto", "Test Training",enabletls=1,
-                            #   brokerhost='',brokerport=-999,numpartitions=3,replication=3,microserviceid='')
+                               "Sebastian.maurice","Toronto", "Test Training",enabletls=1,
+                               brokerhost='',brokerport=-999,numpartitions=3,replication=3,microserviceid='')
 y = json.loads(result3)
 producetotopic=y['Topic']
 producerid1=y['ProducerId']
@@ -98,8 +98,8 @@ print(producerid1)
 # First Create a topic to produce to
 producetotopic="viperindependentvariable1"
 result3=maads.vipercreatetopic(VIPERTOKEN,VIPERHOST,VIPERPORT,producetotopic,"OTICS","Sebastian",
-                             #  "Sebastian.maurice","Toronto", "Test Training",enabletls=1,
-                              # brokerhost='',brokerport=-999,numpartitions=3,replication=3,microserviceid='')
+                               "Sebastian.maurice","Toronto", "Test Training",enabletls=1,
+                               brokerhost='',brokerport=-999,numpartitions=3,replication=3,microserviceid='')
 y = json.loads(result3)
 producetotopic=y['Topic']
 producerid2=y['ProducerId']
@@ -109,8 +109,8 @@ print(producerid2)
 # First Create a topic to produce to
 producetotopic="viperindependentvariable2"
 result3=maads.vipercreatetopic(VIPERTOKEN,VIPERHOST,VIPERPORT,producetotopic,"OTICS","Sebastian",
-                            #   "Sebastian.maurice","Toronto", "Test Training",enabletls=1,
-                             #  brokerhost='',brokerport=-999,numpartitions=3,replication=3,microserviceid='')
+                               "Sebastian.maurice","Toronto", "Test Training",enabletls=1,
+                               brokerhost='',brokerport=-999,numpartitions=3,replication=3,microserviceid='')
 y = json.loads(result3)
 producetotopic=y['Topic']
 producerid3=y['ProducerId']
