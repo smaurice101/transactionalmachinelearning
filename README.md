@@ -27,7 +27,7 @@ Strengthen your knowledge of the inner workings of TML solutions using data stre
 
 For any help and additional information, or if your token has expired you can e-mail: info@otics.ca or goto http://www.otics.ca, and we would be happy to help you! OTICS will provide 1 hour free developer session on TML if needed.
 
-**Read Confluent blog**: Link coming soon.
+[**Read Confluent blog**]()
 
 [**Read Medium blog**](https://sebastian-maurice.medium.com/transactional-machine-learning-with-data-streams-for-real-time-predictions-and-optimization-using-eb12c4df597c)
 
