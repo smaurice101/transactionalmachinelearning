@@ -24,9 +24,9 @@ Apply auto machine learning to data streams and create transactional machine lea
 
 For any help and additional information, or if your token has expired you can e-mail: info@otics.ca or goto http://www.otics.ca, and we would be happy to help you! OTICS will provide 1 hour free developer session on TML if needed.
 
-**Read Medium blog**: https://sebastian-maurice.medium.com/transactional-machine-learning-with-data-streams-for-real-time-predictions-and-optimization-using-eb12c4df597c
-
 **Read Confluent blog**: Link coming soon.
+
+**Read Medium blog**: https://sebastian-maurice.medium.com/transactional-machine-learning-with-data-streams-for-real-time-predictions-and-optimization-using-eb12c4df597c
 
 **EXAMPLE TML PYTHON CODE**
 ```python
