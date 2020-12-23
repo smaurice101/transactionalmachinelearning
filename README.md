@@ -23,7 +23,8 @@ Strengthen your knowledge of the inner workings of TML solutions using data stre
 4) Create a Kafka Cluster at Confluent Cloud: https://www.confluent.io/confluent-cloud
 5) Users can also, **directly**, use MAADS-VIPER and Kafka services on Amazon AWS, Microsoft Azure, and Google (GCP)
 
-*For Advanced users who want to integrate TML with MAADS DEEP LEARNING technology should email info@otics.ca*
+* Both VIPER and HPDE fall under the Software Licence from OTICS Advanced Analytics Inc.: http://www.otics.ca/maadsweb/maads-viper/license/Software-License-VIPER-HPDE.pdf
+* For Advanced users who want to integrate TML with MAADS DEEP LEARNING technology should email info@otics.ca*
 
 **Contact**: 
 
