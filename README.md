@@ -45,7 +45,7 @@ For any help and additional information, or if your token has expired you can e-
 
 [**Produce Data to Kafka**](https://github.com/smaurice101/produce_data_to_kafka)
 
-[**Anomaly Detection with Data Streams**](https://github.com/smaurice101/produce_data_to_kafka)
+[**Anomaly Detection with Data Streams**](https://github.com/smaurice101/tml_anomaly_detection)
 
 [**TML and Prediction and Optimization with Data Streams**](https://github.com/smaurice101/produce_data_to_kafka)
 
