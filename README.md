@@ -19,9 +19,9 @@ Strengthen your knowledge of the inner workings of TML solutions using data stre
 
 **Create Your First TML Solution with Kafka by Downloading:**
 
-1) MAADS-VIPER: https://www.confluent.io/hub/oticsinc/maads-viper (Official Kafka connector for TML - Linux version).  **Latest** Linux/Windows version can be found here: https://github.com/smaurice101/maads-viper)
-2) MAADS-VIPERviz: https://github.com/smaurice101/MAADS-VIPERviz (Streaming Visualization for Windows/Linux versions)
-3) MAADS-HPDE: https://github.com/smaurice101/MAADS-HPDE (Windows/Linux versions available)
+1) MAADS-VIPER: https://www.confluent.io/hub/oticsinc/maads-viper (Official Kafka connector for TML - Linux version).  **Latest** Linux/Windows/MAC version can be found here: https://github.com/smaurice101/maads-viper)
+2) MAADS-VIPERviz: https://github.com/smaurice101/MAADS-VIPERviz (Streaming Visualization for Windows/Linux/MAC versions)
+3) MAADS-HPDE: https://github.com/smaurice101/MAADS-HPDE (Windows/Linux/MAC versions available)
 4) MAADS-Python Library: https://pypi.org/project/maads/
 5) Create a Kafka Cluster at Confluent Cloud: https://www.confluent.io/confluent-cloud
 6) Users can also, **directly**, use MAADS-VIPER and Kafka services on Amazon AWS, Microsoft Azure, and Google (GCP)
