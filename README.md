@@ -19,7 +19,7 @@ Strengthen your knowledge of the inner workings of TML solutions using data stre
 
 **Create Your First TML Solution with Kafka by Downloading the Technologies Below**
 
-[WATCH The TML Instructional Video: Setup, Configuration, Execution, Visualization](https://youtu.be/b1fuIeC7d-8)_**
+[WATCH The TML Instructional Video: Setup, Configuration, Execution, Visualization](https://youtu.be/b1fuIeC7d-8)
 
 1) **_MAADS-VIPER:_** https://www.confluent.io/hub/oticsinc/maads-viper (Official Kafka connector for TML - Linux version).  **Latest** Linux/Windows/MAC version can be found here: https://github.com/smaurice101/maads-viper)
 2) **_MAADS-VIPERviz:_** https://github.com/smaurice101/MAADS-VIPERviz (Streaming Visualization for Windows/Linux/MAC versions)
