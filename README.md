@@ -41,6 +41,8 @@ For any help and additional information, or if your token has expired you can e-
 
 [**Read Medium blog**](https://sebastian-maurice.medium.com/transactional-machine-learning-with-data-streams-for-real-time-predictions-and-optimization-using-eb12c4df597c)
 
+[**Read Fast Big Data Visualization blog**](https://www.linkedin.com/pulse/fast-visualization-big-data-streams-using-sliding-maurice-ph-d-/?trackingId=OFDLTUUUSGqsgYTC0srzdw%3D%3D)
+
 ***
 
 ***
