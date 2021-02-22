@@ -48,7 +48,7 @@ For any help and additional information, or if your token has expired you can e-
 ***
 **EXAMPLE TML PYTHON CODE**: You can literally build extremely powerful, distributed, and scalable cloud-based machine learning solutions with the code below for your business use case of any size with low-code and low-cost!
 
-[**Produce Data to Kafka Cloud Cluster**](https://github.com/smaurice101/produce_data_to_kafka)
+[**Produce Data to Kafka Cloud Cluster** (Let this run for 15 minutes or so THEN run the prediction/optimization/anomaly code)](https://github.com/smaurice101/produce_data_to_kafka)
 
 [**Anomaly Detection with Data Streams**](https://github.com/smaurice101/tml_anomaly_detection)
 
