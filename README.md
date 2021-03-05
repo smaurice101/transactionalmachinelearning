@@ -103,5 +103,5 @@ The Above Assumes:
 4) You added the consumer id for Topic=otics-tmlbook-anomalydataresults
 5) This Consumer IDs are printed out for you in the Python Program in Step 2 b)
 
-**_NOTE:_** Please monitor your Cloud Billing/Payments - DELETE YOUR CLUSTER WHEN YOU ARE DONE.  DO NOT LET YOUR CLUSTER RUN IF YOU ARE NOT USING IT.  The above programs will auto create all data very quickly. So you can DELETE your cluster immediately.  Conlfuent will give you $200 free cloud credits.  The above programs will consume a very low fraction of this free $$.
+**_NOTE:_** Please monitor your Cloud Billing/Payments - DELETE YOUR CLUSTER WHEN YOU ARE DONE.  DO NOT LET YOUR CLUSTER RUN IF YOU ARE NOT USING IT.  The above programs will auto create all data very quickly. So you can DELETE your cluster immediately.  Confluent will give you $200 free cloud credits.  The above programs will consume a low fraction of this free $$.
 ***
