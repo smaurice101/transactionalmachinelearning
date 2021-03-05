@@ -56,7 +56,7 @@ For any help and additional information, or if your token has expired you can e-
 
 **Step 2:**
 
-[**Perform Transactional Machine Learning on Streaming Data** (Let this run for 5 minutes or so THEN run the Prediction/Optimization  code next)](https://github.com/smaurice101/Walmart-Foot-Traffic-Transactional-Machine-Learning)
+[**Walmart Foot Traffic TML** (Let this run for 5 minutes or so THEN run the Prediction/Optimization  code next)](https://github.com/smaurice101/Walmart-Foot-Traffic-Transactional-Machine-Learning)
 
 **Step 3:**
 
