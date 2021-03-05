@@ -51,13 +51,20 @@ For any help and additional information, or if your token has expired you can e-
 **CODE SET 1:** This set of prgrams will go through an example of predicting and optimizing Foot Traffic at ~11,000 Walmart Stores. 
 
 **Step 1:**
-a) [**Produce Walmart Data to Kafka Cluster** (Let this run for 5 minutes or so THEN run the Machine Learning code next)](https://github.com/smaurice101/produce_data_to_kafka)
 
-b) [**Perform Transactional Machine Learning on Streaming Data** (Let this run for 5 minutes or so THEN run the Prediction/Optimization  code next)](https://github.com/smaurice101/Walmart-Foot-Traffic-Transactional-Machine-Learning)
+[**Produce Walmart Data to Kafka Cluster** (Let this run for 5 minutes or so THEN run the Machine Learning code next)](https://github.com/smaurice101/produce_data_to_kafka)
 
-c) [**Perform Walmart Foot Traffic Prediction and Optimization**](https://github.com/smaurice101/Walmart-Predict-and-Optimize-Foot-Traffic) 
+**Step 2:**
 
-d) To Visualize the results in 1 c) you need to run MAADS Visualization (MAADSViz) and then enter the following URL For:
+[**Perform Transactional Machine Learning on Streaming Data** (Let this run for 5 minutes or so THEN run the Prediction/Optimization  code next)](https://github.com/smaurice101/Walmart-Foot-Traffic-Transactional-Machine-Learning)
+
+**Step 3:**
+
+[**Perform Walmart Foot Traffic Prediction and Optimization**](https://github.com/smaurice101/Walmart-Predict-and-Optimize-Foot-Traffic) 
+
+**Step 4:**
+
+To Visualize the results in Step 3 you need to run MAADS Visualization (MAADSViz) and then enter the following URL For:
 
 **_Visualize Predictions:_**
 https://127.0.0.1:8003/prediction.html?topic=otics-tmlbook-walmartretail-foottrafic-prediction-results-output&offset=-1&groupid=&rollbackoffset=10&topictype=prediction&append=0&secure=1&consumerid=[Enter Consumer ID for Topic=otics-tmlbook-walmartretail-foottrafic-prediction-results-output]&vipertoken=hivmg1TMR1zS1ZHVqF4s83Zq1rDtsZKh9pEULHnLR0BXPlaPEMZBEAyC7TY0
@@ -76,11 +83,14 @@ The Above Assumes:
 **CODE SET 2:** This set of program will perform Bank Fraud detection in 50 Bank account and 7 fields in each transactions.  It will detection fraud in real-time. 
 
 **Step 1:**
-a) [**Produce Bank Account Data to Kafka Cluster** (Let this run for 5 minutes or so THEN run the Anomaly Detection code next)](https://github.com/smaurice101/Produce-Bank-Fraud-Data-to-Kafka)
 
-b) [**Perform Transactional Bank Fraud Detection on Streaming Data** This will use multi-threading in Python](https://github.com/smaurice101/Predict-Bank-Fraud)
+[**Produce Bank Account Data to Kafka Cluster** (Let this run for 5 minutes or so THEN run the Anomaly Detection code next)](https://github.com/smaurice101/Produce-Bank-Fraud-Data-to-Kafka)
 
-**_NOTE:_** Please monitor your Cloud Billing/Payments - DELETE YOUR CLUSTER WHEN YOU ARE DONE.  DO NOT LET YOUR CLUSTER RUN IF YOU ARE NOT USING IT.  The above programs will auto create all data very quickly. So you can DELETE your cluster immediately.  Conlfuent will give you $200 free cloud credits.  The above programs will consume a very low fraction of this free $$.
+**Step 2:**
+
+[**Perform Transactional Bank Fraud Detection on Streaming Data** This will use multi-threading in Python](https://github.com/smaurice101/Predict-Bank-Fraud)
+
+**Step 3:**
 
 **_Visualize Anomalies:_**
 
@@ -93,4 +103,5 @@ The Above Assumes:
 4) You added the consumer id for Topic=otics-tmlbook-anomalydataresults
 5) This Consumer IDs are printed out for you in the Python Program in Step 2 b)
 
+**_NOTE:_** Please monitor your Cloud Billing/Payments - DELETE YOUR CLUSTER WHEN YOU ARE DONE.  DO NOT LET YOUR CLUSTER RUN IF YOU ARE NOT USING IT.  The above programs will auto create all data very quickly. So you can DELETE your cluster immediately.  Conlfuent will give you $200 free cloud credits.  The above programs will consume a very low fraction of this free $$.
 ***
