@@ -76,7 +76,7 @@ The Above Assumes:
 **CODE SET 2:** This set of program will perform Bank Fraud detection in 50 Bank account and 7 fields in each transactions.  It will detection fraud in real-time. 
 
 **Step 1:**
-a) [**Produce Bank Account Data to Kafka Cluster** (Let this run for 5 minutes or so THEN run the Anomaly Detection code next)](https://github.com/smaurice101/produce_data_to_kafka)
+a) [**Produce Bank Account Data to Kafka Cluster** (Let this run for 5 minutes or so THEN run the Anomaly Detection code next)](https://github.com/smaurice101/Produce-Bank-Fraud-Data-to-Kafka)
 
 b) [**Perform Transactional Bank Fraud Detection on Streaming Data** This will use multi-threading in Python](https://github.com/smaurice101/Predict-Bank-Fraud)
 
