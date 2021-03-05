@@ -48,10 +48,38 @@ For any help and additional information, or if your token has expired you can e-
 ***
 **EXAMPLE TML PYTHON CODE**: You can literally build extremely powerful, distributed, and scalable cloud-based machine learning solutions with the code below for your business use case of any size with low-code and low-cost!
 
-[**Produce Data to Kafka Cloud Cluster** (Let this run for 15 minutes or so THEN run the prediction/optimization/anomaly code)](https://github.com/smaurice101/produce_data_to_kafka)
+**CODE SET 1:** This set of prgrams will go through an example of predicting and optimizing Foot Traffic at ~11,000 Walmart Stores. 
 
-[**Anomaly Detection with Data Streams**](https://github.com/smaurice101/tml_anomaly_detection)
+**Step 1:**
+a) [**Produce Walmart Data to Kafka Cluster** (Let this run for 5 minutes or so THEN run the Machine Learning code next)](https://github.com/smaurice101/produce_data_to_kafka)
 
-[**TML and Prediction and Optimization with Data Streams**](https://github.com/smaurice101/TML_prediction_optimization)
+b) [**Perform Transactional Machine Learning on Streaming Data** (Let this run for 5 minutes or so THEN run the Prediction/Optimization  code next)](https://github.com/smaurice101/produce_data_to_kafka)
+
+c) [**Perform Prediction and Optimization**](https://github.com/smaurice101/produce_data_to_kafka) - 
+
+d) To Visualize the results in 1 c) you need to run MAADS Visualization (MAADSViz) and then enter the following URL For:
+
+**_Visualize Predictions:_**
+https://127.0.0.1:8003/prediction.html?topic=otics-tmlbook-walmartretail-foottrafic-prediction-results-output&offset=-1&groupid=&rollbackoffset=10&topictype=prediction&append=0&secure=1&consumerid=[Enter Consumer ID for Topic=otics-tmlbook-walmartretail-foottrafic-prediction-results-output]&vipertoken=hivmg1TMR1zS1ZHVqF4s83Zq1rDtsZKh9pEULHnLR0BXPlaPEMZBEAyC7TY0
+
+**_Visualize Optimization:_**
+https://127.0.0.1:8003/optimization.html?topic=otics-tmlbook-walmartretail-foottrafic-optimization-results-output&offset=-1&groupid=&rollbackoffset=10&topictype=optimization&secure=1&append=0&consumerid=[Enter Consumer ID for Topic=otics-tmlbook-walmartretail-foottrafic-prediction-results-output]&vipertoken=hivmg1TMR1zS1ZHVqF4s83Zq1rDtsZKh9pEULHnLR0BXPlaPEMZBEAyC7TY0
+
+
+The Above Assumes:
+1) You have creates a Kafka cluster in Confluent Cloud (Or AWS, Microsoft or Google Cloud)
+2) You have MAADSViz running on IP: 127.0.0.1 and listening on Port: 8003
+3) You downloaded views zip and extracted contents to **viperviz/views folder**
+4) You added the consumer id for Topic=otics-tmlbook-walmartretail-foottrafic-prediction-results-output and Topic=otics-tmlbook-walmartretail-foottrafic-optimization-results-output
+5) This Consumer IDs are printed out for you in the Python Program in Step 1 c)
+
+**CODE SET 2:** This set of program will perform Bank Fraud detection in 50 Bank account and 7 fields in each transactions.  It will detection fraud in real-time. 
+
+**Step 1:**
+a) [**Produce Bank Account Data to Kafka Cluster** (Let this run for 5 minutes or so THEN run the Anomaly Detection code next)](https://github.com/smaurice101/produce_data_to_kafka)
+
+b) [**Perform Transactional Anomaly Detection on Streaming Data** This will use multi-threading in Python
+
+**_NOTE:_** Please monitor your Cloud Billing/Payments - DELETE YOUR CLUSTER WHEN YOU ARE DONE.  DO NOT LET YOUR CLUSTER RUN IF YOU ARE NOT USING IT.  The above programs will auto create all data very quickly. So you can DELETE your cluster immediately.  Conlfuent will give you $200 free cloud credits.  The above programs will consume a very low fraction of this free $$.
 
 ***
