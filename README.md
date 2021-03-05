@@ -55,7 +55,7 @@ a) [**Produce Walmart Data to Kafka Cluster** (Let this run for 5 minutes or so 
 
 b) [**Perform Transactional Machine Learning on Streaming Data** (Let this run for 5 minutes or so THEN run the Prediction/Optimization  code next)](https://github.com/smaurice101/produce_data_to_kafka)
 
-c) [**Perform Prediction and Optimization**](https://github.com/smaurice101/produce_data_to_kafka) - 
+c) [**Perform Walmart Foot Traffic Prediction and Optimization**](https://github.com/smaurice101/Walmart-Predict-and-Optimize-Foot-Traffic) 
 
 d) To Visualize the results in 1 c) you need to run MAADS Visualization (MAADSViz) and then enter the following URL For:
 
