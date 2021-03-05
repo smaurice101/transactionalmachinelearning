@@ -82,4 +82,15 @@ b) [**Perform Transactional Bank Fraud Detection on Streaming Data** This will u
 
 **_NOTE:_** Please monitor your Cloud Billing/Payments - DELETE YOUR CLUSTER WHEN YOU ARE DONE.  DO NOT LET YOUR CLUSTER RUN IF YOU ARE NOT USING IT.  The above programs will auto create all data very quickly. So you can DELETE your cluster immediately.  Conlfuent will give you $200 free cloud credits.  The above programs will consume a very low fraction of this free $$.
 
+**_Visualize Anomalies:_**
+
+https://127.0.0.1:8003/anomaly.html?topic=otics-tmlbook-anomalydataresults&offset=-1&rollbackoffset=20&append=0&topictype=anomaly&secure=1&groupid=&consumerid=[Enter your Consumer ID]&vipertoken=hivmg1TMR1zS1ZHVqF4s83Zq1rDtsZKh9pEULHnLR0BXPlaPEMZBEAyC7TY0
+
+The Above Assumes:
+1) You have creates a Kafka cluster in Confluent Cloud (Or AWS, Microsoft or Google Cloud)
+2) You have MAADSViz running on IP: 127.0.0.1 and listening on Port: 8003
+3) You downloaded views zip and extracted contents to **viperviz/views folder**
+4) You added the consumer id for Topic=otics-tmlbook-anomalydataresults
+5) This Consumer IDs are printed out for you in the Python Program in Step 2 b)
+
 ***
