@@ -94,7 +94,7 @@ The Above Assumes:
 
 **_Visualize Anomalies:_**
 
-https://127.0.0.1:8003/anomaly.html?topic=otics-tmlbook-anomalydataresults&offset=-1&rollbackoffset=20&append=0&topictype=anomaly&secure=1&groupid=&consumerid=[Enter your Consumer ID]&vipertoken=hivmg1TMR1zS1ZHVqF4s83Zq1rDtsZKh9pEULHnLR0BXPlaPEMZBEAyC7TY0
+https://127.0.0.1:8003/anomaly.html?topic=otics-tmlbook-anomalydataresults&offset=-1&rollbackoffset=20&append=0&topictype=anomaly&secure=1&groupid=&consumerid=[Enter your Consumer ID for otics-tmlbook-anomalydataresults]&vipertoken=hivmg1TMR1zS1ZHVqF4s83Zq1rDtsZKh9pEULHnLR0BXPlaPEMZBEAyC7TY0
 
 The Above Assumes:
 1) You have creates a Kafka cluster in Confluent Cloud (Or AWS, Microsoft or Google Cloud)
