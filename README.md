@@ -78,7 +78,7 @@ The Above Assumes:
 **Step 1:**
 a) [**Produce Bank Account Data to Kafka Cluster** (Let this run for 5 minutes or so THEN run the Anomaly Detection code next)](https://github.com/smaurice101/produce_data_to_kafka)
 
-b) [**Perform Transactional Anomaly Detection on Streaming Data** This will use multi-threading in Python
+b) [**Perform Transactional Bank Fraud Detection on Streaming Data** This will use multi-threading in Python](https://github.com/smaurice101/Predict-Bank-Fraud)
 
 **_NOTE:_** Please monitor your Cloud Billing/Payments - DELETE YOUR CLUSTER WHEN YOU ARE DONE.  DO NOT LET YOUR CLUSTER RUN IF YOU ARE NOT USING IT.  The above programs will auto create all data very quickly. So you can DELETE your cluster immediately.  Conlfuent will give you $200 free cloud credits.  The above programs will consume a very low fraction of this free $$.
 
