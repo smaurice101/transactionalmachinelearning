@@ -74,13 +74,13 @@ https://127.0.0.1:8003/optimization.html?topic=otics-tmlbook-walmartretail-foott
 
 
 The Above Assumes:
-1) You have creates a Kafka cluster in Confluent Cloud (Or AWS, Microsoft or Google Cloud)
+1) You have created a Kafka cluster in Confluent Cloud (Or AWS, Microsoft or Google Cloud)
 2) You have MAADSViz running on IP: 127.0.0.1 and listening on Port: 8003
 3) You downloaded views zip and extracted contents to **viperviz/views folder**
 4) You added the consumer id for Topic=otics-tmlbook-walmartretail-foottrafic-prediction-results-output and Topic=otics-tmlbook-walmartretail-foottrafic-optimization-results-output
 5) This Consumer IDs are printed out for you in the Python Program in Step 1 c)
 
-**CODE SET 2:** This set of program will perform Bank Fraud detection in 50 Bank account and 7 fields in each transactions.  It will detection fraud in real-time. 
+**CODE SET 2:** This set of program will perform Bank Fraud detection in 50 Bank accounts and 5 fields in each transaction.  It will detect fraud in real-time. 
 
 **Step 1:**
 
@@ -97,7 +97,7 @@ The Above Assumes:
 https://127.0.0.1:8003/anomaly.html?topic=otics-tmlbook-anomalydataresults&offset=-1&rollbackoffset=20&append=0&topictype=anomaly&secure=1&groupid=&consumerid=[Enter your Consumer ID for otics-tmlbook-anomalydataresults]&vipertoken=hivmg1TMR1zS1ZHVqF4s83Zq1rDtsZKh9pEULHnLR0BXPlaPEMZBEAyC7TY0
 
 The Above Assumes:
-1) You have creates a Kafka cluster in Confluent Cloud (Or AWS, Microsoft or Google Cloud)
+1) You have created a Kafka cluster in Confluent Cloud (Or AWS, Microsoft or Google Cloud)
 2) You have MAADSViz running on IP: 127.0.0.1 and listening on Port: 8003
 3) You downloaded views zip and extracted contents to **viperviz/views folder**
 4) You added the consumer id for Topic=otics-tmlbook-anomalydataresults
