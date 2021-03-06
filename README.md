@@ -48,7 +48,7 @@ For any help and additional information, or if your token has expired you can e-
 ***
 **EXAMPLE TML PYTHON CODE**: You can literally build extremely powerful, distributed, and scalable cloud-based machine learning solutions with the code below for your business use case of any size with low-code and low-cost!
 
-**CODE SET 1:** This set of prgrams will go through an example of predicting and optimizing Foot Traffic at ~11,000 Walmart Stores. 
+**CODE SET 1:** This set of programs will go through an example of predicting and optimizing Foot Traffic at ~11,000 Walmart Stores. 
 
 **Step 1:**
 
