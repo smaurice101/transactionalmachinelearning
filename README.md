@@ -3,7 +3,7 @@
 
 **TML Is Based On the Belief that "_Fast data requires fast machine learning for fast decision-making_"**. TML gives rise in the industy to a **_Data Stream Scientist_** versus a **_Data Scientist_** in conventional machine learning (CML). 
 
-Forthcoming TML Book Details Found on [Publsiher's site](https://www.apress.com/gp/book/9781484270226)
+Forthcoming TML Book Details Found on [Publisher's site](https://www.apress.com/us/book/9781484270226)
 
 Apply auto machine learning to data streams and create transactional machine learning (TML) solutions that are:
  
