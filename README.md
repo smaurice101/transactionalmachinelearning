@@ -64,7 +64,7 @@ For any help and additional information, or if your token has expired you can e-
 
 **Step 4:**
 
-To Visualize the results in Step 3 you need to run MAADS Visualization (MAADSViz) and then enter the following URL For:
+To Visualize the results in Step 3 you need to run MAADS-VIPER Visualization (VIPERviz) and then enter the following URL For:
 
 **_Visualize Predictions:_**
 https://127.0.0.1:8003/prediction.html?topic=otics-tmlbook-walmartretail-foottrafic-prediction-results-output&offset=-1&groupid=&rollbackoffset=10&topictype=prediction&append=0&secure=1&consumerid=[Enter Consumer ID for Topic=otics-tmlbook-walmartretail-foottrafic-prediction-results-output]&vipertoken=hivmg1TMR1zS1ZHVqF4s83Zq1rDtsZKh9pEULHnLR0BXPlaPEMZBEAyC7TY0
