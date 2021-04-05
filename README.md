@@ -36,6 +36,7 @@ Strengthen your knowledge of the inner workings of TML solutions using data stre
 For any help and additional information, or if your token has expired you can e-mail: info@otics.ca or goto http://www.otics.ca, and we would be happy to help you! OTICS will provide 1 hour free developer session on TML if needed.
 
 ***
+[**Watch University of Calgary Lecture on TML to Software Engineering Graduate Students**](https://lnkd.in/gxMw6Da)
 
 [**Read Confluent blog**](https://www.confluent.io/blog/transactional-machine-learning-with-maads-viper-and-apache-kafka/)
 
