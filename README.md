@@ -1,9 +1,9 @@
 # Transactional Machine Learning
-*Transactional Machine Learning (TML) using Data Streams and AutoML is a platform for cloud solutions using Apache Kafka as the data backbone* for advanced machine learning solutions using transactional data to learn from, and provide insights, quickly and continuously to any number of devices and humans in any format!
+*Transactional Machine Learning (TML) using Data Streams and AutoML is a platform for cloud native solutions using Apache Kafka as the data backbone* for advanced machine learning solutions using transactional data to learn from, and provide insights, quickly and continuously to any number of devices and humans in any format!
 
 **TML Is Based On the Belief that "_Fast data requires fast machine learning for fast decision-making_"**. TML gives rise in the industy to a **_Data Stream Scientist_** versus a **_Data Scientist_** in conventional machine learning (CML). 
 
-Forthcoming TML Book Details Found on [Publisher's site](https://www.apress.com/us/book/9781484270226)
+**TML Book Details Found on [Publisher's site](https://www.apress.com/us/book/9781484270226)
 
 Apply auto machine learning to data streams and create transactional machine learning (TML) solutions that are:
  
