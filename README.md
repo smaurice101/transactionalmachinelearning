@@ -12,14 +12,22 @@ Apply auto machine learning to data streams and create transactional machine lea
  **2. elastic**: machine learning solutions that can scale up or down by controlling the number of data streams, algorithms (or machine learning models), and users of the insights
 
 TML is ideal when data are highly erratic (nonlinear) and you want the machine to learn from the **latest** dataset by creating sliding windows of training datasets and auto creating **micro-machine learning models** quickly, that can be easily scaled, managed and the insights used immediately from any device!  There are many TML use cases such as:
+
 **1. IoT**: Capture real-time, fast, data, and building custom **micro-machine learning models** for every IoT device specific to the environment that the device operates in and prediction failures, optimize device settings, and more.
+
 **2. Banking/Finance Fraud Detect**: Detect fraud using unsupervised learning on data streams and process millions of transactions for fraud - see the [LinkedIn blog](https://www.linkedin.com/pulse/bank-fraud-detection-data-streams-kafka-google-cloud-maurice-ph-d-/?trackingId=HEyDMUFIS0C4smYhwuUBfg%3D%3D)
+
 **3. Financial Trading**: Use TML to analyse stock prices and predict **sub-second** stock prices!
+
 **4. Pricing**: Use TML to build optimal pricing of products at scale.
+
 **5. Oil/Gas**: Use TML to optimize oil drilling operations **sub-second** and drilling oil wells faster and cheaper with minimal downtime
+
 **6. SO MUCH MORE... 
 
-**This is not possible with conventional machine learning methods that require frequent human interventions that create lots of friction, and not very elastic.**
+**The above usecases are not possible with conventional machine learning methods that require frequent human interventions that create lots of friction, and not very elastic.**
+
+By using Apache Kafka On-Premise many advanced, and large, TML usecases are 80-90% cheapers than cloud-native usecase, mainly because storage, compute, Egress/Ingress are localized.  Giving Compute and Storage are extremely low-cost On-Premise solutions with TML are on the rise. 
 
 Strengthen your knowledge of the inner workings of TML solutions using data streams with auto machine learning integrated with Apache Kafka.  **You will be at the forefront of an exciting area of machine learning that is focused on speed of data and algorithm creation, scale, and automation.**
 
