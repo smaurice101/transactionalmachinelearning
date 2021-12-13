@@ -11,7 +11,7 @@ Apply auto machine learning to data streams and create transactional machine lea
  
  **2. elastic**: machine learning solutions that can scale up or down by controlling the number of data streams, algorithms (or machine learning models), and users of the insights
 
-TML is ideal when data are highly erratic (nonlinear) and you want the machine to learn from the **latest** dataset by creating sliding windows of training datasets and auto creating **micro-machine learning models** quickly, that can be easily scaled, managed and the insights used immediately from any device!  There are many TML use cases such as:
+TML is ideal when data are highly erratic (nonlinear) and you want the machine to learn from the **latest** dataset by creating sliding windows of training datasets and auto creating **micro-machine learning models** quickly, that can be easily scaled, managed and the insights used immediately from any device!  **There are many TML use cases such as:**
 
 **1. IoT**: Capture real-time, fast, data, and building custom **micro-machine learning models** for every IoT device specific to the environment that the device operates in and predict failures, optimize device settings, and more.
 
@@ -23,7 +23,7 @@ TML is ideal when data are highly erratic (nonlinear) and you want the machine t
 
 **5. Oil/Gas**: Use TML to optimize oil drilling operations **sub-second** and drill oil wells faster and cheaper with minimal downtime
 
-**6. SO MUCH MORE... 
+**6. SO MUCH MORE...** 
 
 **The above usecases are not possible with conventional machine learning methods that require frequent human interventions that create lots of friction, and not very elastic.**
 
