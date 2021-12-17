@@ -15,15 +15,17 @@ TML is ideal when data are highly erratic (nonlinear) and you want the machine t
 
 **1. IoT**: Capture real-time, fast, data, and building custom **micro-machine learning models** for every IoT device specific to the environment that the device operates in and predict failures, optimize device settings, and more.
 
-**2. Banking/Finance Fraud Detect**: Detect fraud using unsupervised learning on data streams and process millions of transactions for fraud - see the [LinkedIn blog](https://www.linkedin.com/pulse/bank-fraud-detection-data-streams-kafka-google-cloud-maurice-ph-d-/?trackingId=HEyDMUFIS0C4smYhwuUBfg%3D%3D)
+**2. IoT Edge**: TML is ideal for edge devices with **No Internet** connections.  Simply use the On-Prem version of TML software, with On-Prem Kafka and create large and powerful, realtime, edge solutions.
+ 
+**3. Banking/Finance Fraud Detect**: Detect fraud using unsupervised learning on data streams and process millions of transactions for fraud - see the [LinkedIn blog](https://www.linkedin.com/pulse/bank-fraud-detection-data-streams-kafka-google-cloud-maurice-ph-d-/?trackingId=HEyDMUFIS0C4smYhwuUBfg%3D%3D)
 
-**3. Financial Trading**: Use TML to analyse stock prices and predict **sub-second** stock prices!
+**4. Financial Trading**: Use TML to analyse stock prices and predict **sub-second** stock prices!
 
-**4. Pricing**: Use TML to build optimal pricing of products at scale.
+**5. Pricing**: Use TML to build optimal pricing of products at scale.
 
-**5. Oil/Gas**: Use TML to optimize oil drilling operations **sub-second** and drill oil wells faster and cheaper with minimal downtime
+**6. Oil/Gas**: Use TML to optimize oil drilling operations **sub-second** and drill oil wells faster and cheaper with minimal downtime
 
-**6. SO MUCH MORE...** 
+**7. SO MUCH MORE...** 
 
 **The above usecases are not possible with conventional machine learning methods that require frequent human interventions that create lots of friction, and not very elastic.**
 
