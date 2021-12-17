@@ -27,7 +27,7 @@ TML is ideal when data are highly erratic (nonlinear) and you want the machine t
 
 **The above usecases are not possible with conventional machine learning methods that require frequent human interventions that create lots of friction, and not very elastic.**
 
-**By using Apache Kafka On-Premise many advanced, and large, TML usecases are 80-90% cheaper than cloud-native usecase, mainly because storage, compute, Egress/Ingress and Kafka partitions are localized.  Given Compute and Storage are extremely low-cost On-Premise solutions with TML are on the rise.**
+**By using Apache Kafka On-Premise many advanced, and large, TML usecases are 80-90% cheaper than cloud-native usecases, mainly because storage, compute, Egress/Ingress and Kafka partitions are localized.  Given Compute and Storage are extremely low-cost On-Premise solutions with TML are on the rise.**
 
 Strengthen your knowledge of the inner workings of TML solutions using data streams with auto machine learning integrated with Apache Kafka.  **You will be at the forefront of an exciting area of machine learning that is focused on speed of data and algorithm creation, scale, and automation.**
 
