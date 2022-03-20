@@ -43,4 +43,4 @@ def broadcast_getavailable_viper_hpde():
   mainfreetml=freetml1 + freetml2
   return mainfreetml
 
-available_viper_hpde_list=here=broadcast_getavailable_viper_hpde()
+available_viper_hpde_list=broadcast_getavailable_viper_hpde()
