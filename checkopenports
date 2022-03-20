@@ -26,10 +26,10 @@ def broadcast(httptype):
           try:             
             if "mainhpd" in appname or "viper" in appname or "hpde" in appname:
               msg=maadstml.areyoubusy(host,port)
-              if msg!=None:
+              if msg!=None:                    
                 mlist=msg.split(",")
                 if mlist[1]=="no":
-                  freetml.append([mlist[0],host,port])                    
+                  freetml.append([mlist[0],host,port,mlist[len(mlist)-1]])                    
               
           except Exception as e:
             continue
