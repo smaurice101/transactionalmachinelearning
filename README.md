@@ -16,16 +16,18 @@ TML is ideal when data are highly erratic (nonlinear) and you want the machine t
 **1. IoT**: Capture real-time, fast, data, and build custom **micro-machine learning models** for every IoT device specific to the environment that the device operates in and predict failures, optimize device settings, and more.
 
 **2. IoT Edge**: TML is ideal for edge devices with **No Internet** connections.  Simply use the On-Prem version of TML software, with On-Prem Kafka and create large and powerful, real-time, edge solutions.
- 
-**3. Banking/Finance Fraud Detect**: Detect fraud using unsupervised learning on data streams and process millions of transactions for fraud - see the [LinkedIn blog](https://www.linkedin.com/pulse/bank-fraud-detection-data-streams-kafka-google-cloud-maurice-ph-d-/?trackingId=HEyDMUFIS0C4smYhwuUBfg%3D%3D)
 
-**4. Financial Trading**: Use TML to analyse stock prices and predict **sub-second** stock prices!
+**3. HealthCare**: TML is ideal for health data processing for patients, payers, and providers.  Open access to health data has been mandated by [CMS](https://www.cms.gov/Regulations-and-Guidance/Guidance/Interoperability/index#:~:text=or%20fact%20sheet.-,CMS%20Interoperability%20and%20Patient%20Access%20Final%20Rule,they%20can%20best%20use%20it), which opens up enormous opportunities for TML.
 
-**5. Pricing**: Use TML to build optimal pricing of products at scale.
+**4. Banking/Finance Fraud Detect**: Detect fraud using unsupervised learning on data streams and process millions of transactions for fraud - see the [LinkedIn blog](https://www.linkedin.com/pulse/bank-fraud-detection-data-streams-kafka-google-cloud-maurice-ph-d-/?trackingId=HEyDMUFIS0C4smYhwuUBfg%3D%3D)
 
-**6. Oil/Gas**: Use TML to optimize oil drilling operations **sub-second** and drill oil wells faster and cheaper with minimal downtime
+**5. Financial Trading**: Use TML to analyse stock prices and predict **sub-second** stock prices!
 
-**7. SO MUCH MORE...** 
+**6. Pricing**: Use TML to build optimal pricing of products at scale.
+
+**7. Oil/Gas**: Use TML to optimize oil drilling operations **sub-second** and drill oil wells faster and cheaper with minimal downtime
+
+**8. SO MUCH MORE...** 
 
 **The above usecases are not possible with conventional machine learning methods that require frequent human interventions that create lots of friction, and not very elastic.**
 
