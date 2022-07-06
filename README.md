@@ -5,7 +5,7 @@
 
 **TML Book Details Found on** [Publisher's site](https://www.apress.com/us/book/9781484270226)
 
-Apply auto machine learning to data streams and create transactional machine learning (TML) solutions that are:
+Apply data preprocessing and auto machine learning to data streams and create transactional machine learning (TML) solutions that are:
  
  **1. frictionless**: require minimal to no human intervention 
  
