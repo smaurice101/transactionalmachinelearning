@@ -9,7 +9,7 @@ Apply auto machine learning to data streams and create transactional machine lea
  
  **1. frictionless**: require minimal to no human intervention 
  
- **2. elastic**: machine learning solutions that can scale up or down by controlling the number of data streams, algorithms (or machine learning models), and users of the insights
+ **2. elastic**: machine learning solutions that can scale up or down using Kubernetes to control or enhance the number of data streams, algorithms (or machine learning models) and predictions instantly and continuously.
 
 TML is ideal when data are highly erratic (nonlinear) and you want the machine to learn from the **latest** dataset by creating sliding windows of training datasets and auto creating **micro-machine learning models** quickly, that can be easily scaled, managed and the insights used immediately from any device!  **There are many TML use cases such as:**
 
