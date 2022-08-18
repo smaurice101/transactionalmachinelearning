@@ -42,7 +42,7 @@ Strengthen your knowledge of the inner workings of TML solutions using data stre
 [WATCH The TML Instructional Video: Setup, Configuration, Execution, Visualization](https://youtu.be/b1fuIeC7d-8)
 
 1) **_MAADS-VIPER:_** https://www.confluent.io/hub/oticsinc/maads-viper (Official Kafka connector for TML - Linux version).  **Latest** Linux/Windows/MAC version can be found above.)
-2) **_MAADS-VIPERviz:_** Streaming Visualization for Windows/Linux/MAC versions
+2) **_MAADS-VIPERviz:_** [Streaming Visualization for Windows/Linux/MAC versions](https://github.com/smaurice101/MAADS-VIPERviz/tree/main)
 3) **_MAADS-HPDE:_** AutoML for Windows/Linux/MAC versions available
 4) **_MAADS-Python Library:_** https://pypi.org/project/maadstml/ (NOTE: You need Python IDE installed: tested with Python up to v.3.8)
 5) **_Create a Kafka Cluster at Confluent Cloud:_** https://www.confluent.io/confluent-cloud
