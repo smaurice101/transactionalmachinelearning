@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  otics-mirrorbrokers:
+    image: maadsdocker/otics-mirrorbrokers
+    container_name: mirrorbrokers
+    network_mode: host
+    env_file:
+     - viper-generic.env
+    ports:
+      - "9092:9092"
