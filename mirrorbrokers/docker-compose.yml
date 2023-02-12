@@ -4,8 +4,96 @@ services:
   otics-mirrorbrokers:
     image: maadsdocker/otics-mirrorbrokers
     container_name: mirrorbrokers
-    network_mode: host
+    network_mode: host    
     env_file:
      - viper-generic.env
+    volumes:
+       - mirrorbrokersvol:/otics/tml/mirrorbrokers
+    environment:
+      BROKERJSONFILE: >
+       {
+        "brokers":[{
+            "id":1,
+            "brokerfrom":"pkc-6ojv2.us-west4.gcp.confluent.cloud:9092",
+            "brokerusernamefrom":"NELJO4LM3G4IJ72A:Ar5CxLsPKErfuidEWuiom6GueiaQSKpKCV5lriBlqMucNCRfjSqyHZ4+nMOl6xSz",
+            "brokerto":"pkc-419q3.us-east4.gcp.confluent.cloud:9092",
+            "brokerusernameto":"MW7MSO4DV5TVHQVL:pm5j+BYyRgGl7zaE1so8cIqRUrS3gqx9X/e3SuaZ2Ef+Gdh43O911yAM8qJe8Ucf",
+            "enabletlsfrom":"1",
+            "enabletlsto":"1",
+            "compressionfrom":"snappy",
+            "compressionto":"snappy",
+            "saslfrom":"PLAIN",
+            "saslto":"PLAIN"
+            },
+            {
+             "id":2,
+             "brokerfrom":"pkc-ymrq7.us-east-2.aws.confluent.cloud:9092",
+             "brokerusernamefrom":"5R3MSIALEXOZEXCL:Yt8hNOASEjPTjmRW0eAWvv9zNwOAGTDrYXK5Yd6vTJxTGr+UuqDq/fYqgXAdMeNN",
+             "brokerto":"pkc-pgq85.us-west-2.aws.confluent.cloud:9092",
+             "brokerusernameto":"33QXYXWFM7RC6XEK:w0nulHyorxbYoYw7utHsaM9dTkJTxQMwZnbZErv8W3Ka4nwVEWkLfAjtkhJt8MxM",
+             "enabletlsfrom":"1",
+             "enabletlsto":"1",
+             "compressionfrom":"snappy",
+             "compressionto":"snappy",
+             "saslfrom":"PLAIN",
+             "saslto":"PLAIN"
+             },
+             {
+             "id":3,
+             "brokerfrom":"pkc-56d1g.eastus.azure.confluent.cloud:9092",
+             "brokerusernamefrom":"G2Z5CIXJYNDF6HPY:umT7djfREmmfVEuWaJIj9Q0sJVO6PusrMP13CIfJfDZQC3lFkzbNq7pJtrVMt2J1",
+             "brokerto":"pkc-pgq85.us-west-2.aws.confluent.cloud:9092",
+             "brokerusernameto":"33QXYXWFM7RC6XEK:w0nulHyorxbYoYw7utHsaM9dTkJTxQMwZnbZErv8W3Ka4nwVEWkLfAjtkhJt8MxM",
+             "enabletlsfrom":"1",
+             "enabletlsto":"1",
+             "compressionfrom":"snappy",
+             "compressionto":"snappy",
+             "saslfrom":"PLAIN",
+             "saslto":"PLAIN"
+             },
+             {
+             "id":4,
+             "brokerfrom":"pkc-ymrq7.us-east-2.aws.confluent.cloud:9092",
+             "brokerusernamefrom":"RGYVM6QYUVE5LTAY:W8Ms15WuJKofsxEbuVsvVHiVgb7ItplQY89tS9uPreBP0cpp3HtJKtg2IfiNw649",
+             "brokerto":"pkc-419q3.us-east4.gcp.confluent.cloud:9092",
+             "brokerusernameto":"MW7MSO4DV5TVHQVL:pm5j+BYyRgGl7zaE1so8cIqRUrS3gqx9X/e3SuaZ2Ef+Gdh43O911yAM8qJe8Ucf",
+             "enabletlsfrom":"1",
+             "enabletlsto":"1",
+             "compressionfrom":"snappy",
+             "compressionto":"snappy",
+             "saslfrom":"PLAIN",
+             "saslto":"PLAIN"
+             },
+             {
+             "id":5,
+             "brokerfrom":"pkc-mz3gw.westus3.azure.confluent.cloud:9092",
+             "brokerusernamefrom":"FNKDA5VOA56FGLRX:oLC8LuUjC5YoHLrzmbUEZoARugJyG6agbVrUOWSfJzJBKCROqwMScXScyFdnRtW8",
+             "brokerto":"pkc-pgq85.us-west-2.aws.confluent.cloud:9092",
+             "brokerusernameto":"33QXYXWFM7RC6XEK:w0nulHyorxbYoYw7utHsaM9dTkJTxQMwZnbZErv8W3Ka4nwVEWkLfAjtkhJt8MxM",
+             "enabletlsfrom":"1",
+             "enabletlsto":"1",
+             "compressionfrom":"snappy",
+             "compressionto":"snappy",
+             "saslfrom":"PLAIN",
+             "saslto":"PLAIN"
+             },
+             {
+             "id":6,
+             "brokerfrom":"pkc-ldvmy.centralus.azure.confluent.cloud:9092",
+             "brokerusernamefrom":"LCYT5Q753JI2FG4D:6/wzTsuBKkgp4jaa9SYeNxqgiQ5Sy4kr+2sVeTDdrUf0syUwMY/wUEMNoybZqwgO",
+             "brokerto":"pkc-419q3.us-east4.gcp.confluent.cloud:9092",
+             "brokerusernameto":"MW7MSO4DV5TVHQVL:pm5j+BYyRgGl7zaE1so8cIqRUrS3gqx9X/e3SuaZ2Ef+Gdh43O911yAM8qJe8Ucf",
+             "enabletlsfrom":"1",
+             "enabletlsto":"1",
+             "compressionfrom":"snappy",
+             "compressionto":"snappy",
+             "saslfrom":"PLAIN",
+             "saslto":"PLAIN"
+             }
+          ]
+       }
     ports:
       - "9092:9092"
+volumes:
+   mirrorbrokersvol:
+     name: mirrorbrokers-vol
