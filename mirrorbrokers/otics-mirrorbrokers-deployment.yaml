@@ -1,0 +1,395 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.26.0 (40646f47)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: otics-mirrorbrokers
+  name: otics-mirrorbrokers
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: otics-mirrorbrokers
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.26.0 (40646f47)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: otics-mirrorbrokers
+    spec:
+      containers:
+        - env:
+            - name: ASYNCTIMEOUT
+              valueFrom:
+                configMapKeyRef:
+                  key: ASYNCTIMEOUT
+                  name: viper-generic-env
+            - name: BATCHTHREADS
+              valueFrom:
+                configMapKeyRef:
+                  key: BATCHTHREADS
+                  name: viper-generic-env
+            - name: BROKERJSONFILE
+              value: |
+                {
+                 "brokers":[{
+                     "id":1,
+                     "brokerfrom":"pkc-6ojv2.us-west4.gcp.confluent.cloud:9092",
+                     "brokerusernamefrom":"NELJO4LM3G4IJ72A:Ar5CxLsPKErfuidEWuiom6GueiaQSKpKCV5lriBlqMucNCRfjSqyHZ4+nMOl6xSz",
+                     "brokerto":"pkc-419q3.us-east4.gcp.confluent.cloud:9092",
+                     "brokerusernameto":"MW7MSO4DV5TVHQVL:pm5j+BYyRgGl7zaE1so8cIqRUrS3gqx9X/e3SuaZ2Ef+Gdh43O911yAM8qJe8Ucf",
+                     "enabletlsfrom":"1",
+                     "enabletlsto":"1",
+                     "compressionfrom":"snappy",
+                     "compressionto":"snappy",
+                     "saslfrom":"PLAIN",
+                     "saslto":"PLAIN"
+                     },
+                     {
+                      "id":2,
+                      "brokerfrom":"pkc-ymrq7.us-east-2.aws.confluent.cloud:9092",
+                      "brokerusernamefrom":"5R3MSIALEXOZEXCL:Yt8hNOASEjPTjmRW0eAWvv9zNwOAGTDrYXK5Yd6vTJxTGr+UuqDq/fYqgXAdMeNN",
+                      "brokerto":"pkc-pgq85.us-west-2.aws.confluent.cloud:9092",
+                      "brokerusernameto":"33QXYXWFM7RC6XEK:w0nulHyorxbYoYw7utHsaM9dTkJTxQMwZnbZErv8W3Ka4nwVEWkLfAjtkhJt8MxM",
+                      "enabletlsfrom":"1",
+                      "enabletlsto":"1",
+                      "compressionfrom":"snappy",
+                      "compressionto":"snappy",
+                      "saslfrom":"PLAIN",
+                      "saslto":"PLAIN"
+                      },
+                      {
+                      "id":3,
+                      "brokerfrom":"pkc-56d1g.eastus.azure.confluent.cloud:9092",
+                      "brokerusernamefrom":"G2Z5CIXJYNDF6HPY:umT7djfREmmfVEuWaJIj9Q0sJVO6PusrMP13CIfJfDZQC3lFkzbNq7pJtrVMt2J1",
+                      "brokerto":"pkc-pgq85.us-west-2.aws.confluent.cloud:9092",
+                      "brokerusernameto":"33QXYXWFM7RC6XEK:w0nulHyorxbYoYw7utHsaM9dTkJTxQMwZnbZErv8W3Ka4nwVEWkLfAjtkhJt8MxM",
+                      "enabletlsfrom":"1",
+                      "enabletlsto":"1",
+                      "compressionfrom":"snappy",
+                      "compressionto":"snappy",
+                      "saslfrom":"PLAIN",
+                      "saslto":"PLAIN"
+                      },
+                      {
+                      "id":4,
+                      "brokerfrom":"pkc-ymrq7.us-east-2.aws.confluent.cloud:9092",
+                      "brokerusernamefrom":"RGYVM6QYUVE5LTAY:W8Ms15WuJKofsxEbuVsvVHiVgb7ItplQY89tS9uPreBP0cpp3HtJKtg2IfiNw649",
+                      "brokerto":"pkc-419q3.us-east4.gcp.confluent.cloud:9092",
+                      "brokerusernameto":"MW7MSO4DV5TVHQVL:pm5j+BYyRgGl7zaE1so8cIqRUrS3gqx9X/e3SuaZ2Ef+Gdh43O911yAM8qJe8Ucf",
+                      "enabletlsfrom":"1",
+                      "enabletlsto":"1",
+                      "compressionfrom":"snappy",
+                      "compressionto":"snappy",
+                      "saslfrom":"PLAIN",
+                      "saslto":"PLAIN"
+                      },
+                      {
+                      "id":5,
+                      "brokerfrom":"pkc-mz3gw.westus3.azure.confluent.cloud:9092",
+                      "brokerusernamefrom":"FNKDA5VOA56FGLRX:oLC8LuUjC5YoHLrzmbUEZoARugJyG6agbVrUOWSfJzJBKCROqwMScXScyFdnRtW8",
+                      "brokerto":"pkc-pgq85.us-west-2.aws.confluent.cloud:9092",
+                      "brokerusernameto":"33QXYXWFM7RC6XEK:w0nulHyorxbYoYw7utHsaM9dTkJTxQMwZnbZErv8W3Ka4nwVEWkLfAjtkhJt8MxM",
+                      "enabletlsfrom":"1",
+                      "enabletlsto":"1",
+                      "compressionfrom":"snappy",
+                      "compressionto":"snappy",
+                      "saslfrom":"PLAIN",
+                      "saslto":"PLAIN"
+                      },
+                      {
+                      "id":6,
+                      "brokerfrom":"pkc-ldvmy.centralus.azure.confluent.cloud:9092",
+                      "brokerusernamefrom":"LCYT5Q753JI2FG4D:6/wzTsuBKkgp4jaa9SYeNxqgiQ5Sy4kr+2sVeTDdrUf0syUwMY/wUEMNoybZqwgO",
+                      "brokerto":"pkc-419q3.us-east4.gcp.confluent.cloud:9092",
+                      "brokerusernameto":"MW7MSO4DV5TVHQVL:pm5j+BYyRgGl7zaE1so8cIqRUrS3gqx9X/e3SuaZ2Ef+Gdh43O911yAM8qJe8Ucf",
+                      "enabletlsfrom":"1",
+                      "enabletlsto":"1",
+                      "compressionfrom":"snappy",
+                      "compressionto":"snappy",
+                      "saslfrom":"PLAIN",
+                      "saslto":"PLAIN"
+                      }
+                   ]
+                }
+            - name: BROKER_HOSTPORT_FROM
+              valueFrom:
+                configMapKeyRef:
+                  key: BROKER_HOSTPORT_FROM
+                  name: viper-generic-env
+            - name: BROKER_HOSTPORT_TO
+              valueFrom:
+                configMapKeyRef:
+                  key: BROKER_HOSTPORT_TO
+                  name: viper-generic-env
+            - name: BROKER_USERNAME_PASS_FROM
+              valueFrom:
+                configMapKeyRef:
+                  key: BROKER_USERNAME_PASS_FROM
+                  name: viper-generic-env
+            - name: BROKER_USERNAME_PASS_TO
+              valueFrom:
+                configMapKeyRef:
+                  key: BROKER_USERNAME_PASS_TO
+                  name: viper-generic-env
+            - name: CLOUD_PASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  key: CLOUD_PASSWORD
+                  name: viper-generic-env
+            - name: CLOUD_USERNAME
+              valueFrom:
+                configMapKeyRef:
+                  key: CLOUD_USERNAME
+                  name: viper-generic-env
+            - name: COMPANYNAME
+              valueFrom:
+                configMapKeyRef:
+                  key: COMPANYNAME
+                  name: viper-generic-env
+            - name: COMPRESSIONTYPE
+              valueFrom:
+                configMapKeyRef:
+                  key: COMPRESSIONTYPE
+                  name: viper-generic-env
+            - name: COMPRESSION_FROM
+              valueFrom:
+                configMapKeyRef:
+                  key: COMPRESSION_FROM
+                  name: viper-generic-env
+            - name: COMPRESSION_TO
+              valueFrom:
+                configMapKeyRef:
+                  key: COMPRESSION_TO
+                  name: viper-generic-env
+            - name: ENABLETLS_FROM
+              valueFrom:
+                configMapKeyRef:
+                  key: ENABLETLS_FROM
+                  name: viper-generic-env
+            - name: ENABLETLS_TO
+              valueFrom:
+                configMapKeyRef:
+                  key: ENABLETLS_TO
+                  name: viper-generic-env
+            - name: FILEAGEMAX
+              valueFrom:
+                configMapKeyRef:
+                  key: FILEAGEMAX
+                  name: viper-generic-env
+            - name: KAFKA_ADVERTISED_HOST_NAME
+              valueFrom:
+                configMapKeyRef:
+                  key: KAFKA_ADVERTISED_HOST_NAME
+                  name: viper-generic-env
+            - name: KAFKA_CONNECT_BOOTSTRAP_SERVERS
+              valueFrom:
+                configMapKeyRef:
+                  key: KAFKA_CONNECT_BOOTSTRAP_SERVERS
+                  name: viper-generic-env
+            - name: KAFKA_ZOOKEEPER_CONNECT
+              valueFrom:
+                configMapKeyRef:
+                  key: KAFKA_ZOOKEEPER_CONNECT
+                  name: viper-generic-env
+            - name: KUBERNETES
+              valueFrom:
+                configMapKeyRef:
+                  key: KUBERNETES
+                  name: viper-generic-env
+            - name: LOGSTREAMTOPIC
+              valueFrom:
+                configMapKeyRef:
+                  key: LOGSTREAMTOPIC
+                  name: viper-generic-env
+            - name: LOGSTREAMTOPICPARTITIONS
+              valueFrom:
+                configMapKeyRef:
+                  key: LOGSTREAMTOPICPARTITIONS
+                  name: viper-generic-env
+            - name: LOGSTREAMTOPICREPLICATIONFACTOR
+              valueFrom:
+                configMapKeyRef:
+                  key: LOGSTREAMTOPICREPLICATIONFACTOR
+                  name: viper-generic-env
+            - name: MAXBROKERSPERCONTAINER
+              valueFrom:
+                configMapKeyRef:
+                  key: MAXBROKERSPERCONTAINER
+                  name: viper-generic-env
+            - name: MAXCONSUMEMESSAGES
+              valueFrom:
+                configMapKeyRef:
+                  key: MAXCONSUMEMESSAGES
+                  name: viper-generic-env
+            - name: MAXOPENREQUESTS
+              valueFrom:
+                configMapKeyRef:
+                  key: MAXOPENREQUESTS
+                  name: viper-generic-env
+            - name: MAXPERCMESSAGES
+              valueFrom:
+                configMapKeyRef:
+                  key: MAXPERCMESSAGES
+                  name: viper-generic-env
+            - name: MAXPREDICTIONROWS
+              valueFrom:
+                configMapKeyRef:
+                  key: MAXPREDICTIONROWS
+                  name: viper-generic-env
+            - name: MAXPREPROCESSMESSAGES
+              valueFrom:
+                configMapKeyRef:
+                  key: MAXPREPROCESSMESSAGES
+                  name: viper-generic-env
+            - name: MAXTRAININGROWS
+              valueFrom:
+                configMapKeyRef:
+                  key: MAXTRAININGROWS
+                  name: viper-generic-env
+            - name: MAXVIPERVIZCONNECTIONS
+              valueFrom:
+                configMapKeyRef:
+                  key: MAXVIPERVIZCONNECTIONS
+                  name: viper-generic-env
+            - name: MAXVIPERVIZROLLBACKOFFSET
+              valueFrom:
+                configMapKeyRef:
+                  key: MAXVIPERVIZROLLBACKOFFSET
+                  name: viper-generic-env
+            - name: MICROSERVICEID
+              valueFrom:
+                configMapKeyRef:
+                  key: MICROSERVICEID
+                  name: viper-generic-env
+            - name: NAME
+              valueFrom:
+                configMapKeyRef:
+                  key: NAME
+                  name: viper-generic-env
+            - name: ONPREM
+              valueFrom:
+                configMapKeyRef:
+                  key: ONPREM
+                  name: viper-generic-env
+            - name: PARTITIONS
+              valueFrom:
+                configMapKeyRef:
+                  key: PARTITIONS
+                  name: viper-generic-env
+            - name: PARTITION_CHANGE_PERC
+              valueFrom:
+                configMapKeyRef:
+                  key: PARTITION_CHANGE_PERC
+                  name: viper-generic-env
+            - name: POLLING_ALERTS
+              valueFrom:
+                configMapKeyRef:
+                  key: POLLING_ALERTS
+                  name: viper-generic-env
+            - name: REPLICATIONFACTOR_FROM
+              valueFrom:
+                configMapKeyRef:
+                  key: REPLICATIONFACTOR_FROM
+                  name: viper-generic-env
+            - name: REPLICATIONFACTOR_TO
+              valueFrom:
+                configMapKeyRef:
+                  key: REPLICATIONFACTOR_TO
+                  name: viper-generic-env
+            - name: SASLMECHANISM
+              valueFrom:
+                configMapKeyRef:
+                  key: SASLMECHANISM
+                  name: viper-generic-env
+            - name: SASL_FROM
+              valueFrom:
+                configMapKeyRef:
+                  key: SASL_FROM
+                  name: viper-generic-env
+            - name: SASL_TO
+              valueFrom:
+                configMapKeyRef:
+                  key: SASL_TO
+                  name: viper-generic-env
+            - name: SERVICENAME_FROM
+              valueFrom:
+                configMapKeyRef:
+                  key: SERVICENAME_FROM
+                  name: viper-generic-env
+            - name: SERVICENAME_TO
+              valueFrom:
+                configMapKeyRef:
+                  key: SERVICENAME_TO
+                  name: viper-generic-env
+            - name: SSL_CLIENT_CERT_FILE
+              valueFrom:
+                configMapKeyRef:
+                  key: SSL_CLIENT_CERT_FILE
+                  name: viper-generic-env
+            - name: SSL_CLIENT_KEY_FILE
+              valueFrom:
+                configMapKeyRef:
+                  key: SSL_CLIENT_KEY_FILE
+                  name: viper-generic-env
+            - name: SSL_SERVER_CERT_FILE
+              valueFrom:
+                configMapKeyRef:
+                  key: SSL_SERVER_CERT_FILE
+                  name: viper-generic-env
+            - name: SYNC_INTERVAL
+              valueFrom:
+                configMapKeyRef:
+                  key: SYNC_INTERVAL
+                  name: viper-generic-env
+            - name: TOPICS_LIST_FROM
+              valueFrom:
+                configMapKeyRef:
+                  key: TOPICS_LIST_FROM
+                  name: viper-generic-env
+            - name: TOPIC_FILTER
+              valueFrom:
+                configMapKeyRef:
+                  key: TOPIC_FILTER
+                  name: viper-generic-env
+            - name: USEHTTP
+              valueFrom:
+                configMapKeyRef:
+                  key: USEHTTP
+                  name: viper-generic-env
+            - name: VIPERDEBUG
+              valueFrom:
+                configMapKeyRef:
+                  key: VIPERDEBUG
+                  name: viper-generic-env
+            - name: WRITETOVIPERDB
+              valueFrom:
+                configMapKeyRef:
+                  key: WRITETOVIPERDB
+                  name: viper-generic-env
+            - name: replicationchange
+              valueFrom:
+                configMapKeyRef:
+                  key: replicationchange
+                  name: viper-generic-env
+          image: maadsdocker/otics-mirrorbrokers
+          name: mirrorbrokers
+          ports:
+            - containerPort: 9092
+          resources: {}
+          volumeMounts:
+            - mountPath: /otics/tml/mirrorbrokers
+              name: mirrorbrokersvol
+      restartPolicy: Always
+      volumes:
+        - name: mirrorbrokersvol
+          persistentVolumeClaim:
+            claimName: mirrorbrokersvol
+status: {}
