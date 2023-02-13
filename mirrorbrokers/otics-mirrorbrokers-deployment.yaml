@@ -385,7 +385,7 @@ spec:
             - containerPort: 9092
           resources: {}
           volumeMounts:
-            - mountPath: /otics/tml/mirrorbrokers
+            - mountPath: /otics/tml/mirrorbrokers/brokers
               name: mirrorbrokersvol
       restartPolicy: Always
       volumes:
