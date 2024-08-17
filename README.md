@@ -1,3 +1,5 @@
+Comprehensive TML Details on [Readthedocs](https://tml.readthedocs.io/en/latest/index.html)
+
 # Transactional Machine Learning : *The Machine Learning Platform for Data Streams*
 *Transactional Machine Learning (TML) using Data Streams and AutoML is a platform for building and streaming cloud native solutions using Apache Kafka or Redpanda as the data backbone, with Kubernetes and Docker as core infrastucture components, running on Confluent, AWS, GCP, AZURE,* for advanced machine learning solutions using transactional data to learn from, and provide insights, quickly and continuously to any number of devices and humans in any format!
 
